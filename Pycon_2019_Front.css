@@ -1,0 +1,82 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    height:900px;
+    display:flex;
+    justify-content: center;
+    overflow:hidden;
+}
+
+#mainDiv{
+    width:614px;
+    margin-top:100px;
+    animation-name:Animation;
+    animation-fill-mode: forwards;
+    /* animation-delay:3s; */
+    animation-duration:7s;
+}
+
+#userInfomationDiv{
+    display:flex;
+    flex-direction: row;
+    height:60px;
+    border:1px solid #c0bfbf;
+}
+
+#userProfile{
+    margin-left:30px;
+    width:32px;
+    height:32px;
+    margin-top:14px;
+    border-radius: 16px;
+}
+
+#userId{
+    margin-left:15px;
+    padding-top:18px;
+}
+
+#contentDiv{
+    border:1px solid #c0bfbf;
+    height: 700px;
+    border-top:none;
+    overflow:hidden;
+}
+
+#contentImg{
+    max-width:614px;
+    max-height:560px;
+    object-fit:cover;
+}
+
+#contentLike{
+    margin-left:14px;
+    font-weight: 550;
+}
+
+#contentText{
+    margin-top:14px;
+    margin-left:14px;
+}
+
+@keyframes Animation{
+    from{
+        transform:translate(0px,1000px);
+    }
+    25%{
+        transform:translate(0px,0px);
+    }
+    50%{
+        transform:translate(0px,0px);
+    }
+    75%{
+        transform: translate(0px,0px);
+    }
+    to{
+        transform:translate(0px,-1000px);   
+    }
+}
+
