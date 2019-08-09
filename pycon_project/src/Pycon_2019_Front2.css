@@ -1,0 +1,149 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+
+p ,span{
+    font-size:12px;
+    text-align: center;
+}
+
+#gameItem{
+    display:flex;
+    align-items: center;
+    background-color: #bfe6ff;
+    width:740px;
+    margin-bottom:10px;
+}
+
+#gameInfomation , #gameUserInfomation , #KDADiv{
+    margin-left: 20px;
+}
+
+
+#gameType{
+    font-weight: 550;   
+}
+
+#gameDate{ 
+    margin-bottom:5px;
+}
+
+#gameResult{
+    font-weight: 550;
+}
+
+/* #bar{
+    width:40px;
+    height:2px;
+    background-color:rgb(161, 161, 161);
+    margin-left:10px;
+    margin-bottom:3px;
+} */
+
+#flexDiv{
+    display:flex;
+}
+
+#championImage{
+    width:46px;
+    height: 46px;
+    border-radius: 50px;
+    margin-right:5px;
+}
+.runes,.spell{
+    width:22px;
+    height:22px;
+    display:block;
+    border-radius: 3px;
+    padding:2px;
+}
+
+#championName{
+    font-size:11px;
+    margin-top:3px;
+}
+
+#KDADiv{
+    display:flex;
+    justify-content: center;
+    margin-left:50px;
+}
+
+#KDA{
+    margin-bottom:5px;
+}
+
+#Kill , #Death , #Assist{
+    font-weight: 550;
+    font-size:15px;
+}
+
+#Death{
+    color:rgb(255, 75, 75);
+}
+
+#RatingDiv{
+    font-weight: 550;
+}
+
+#MultiKill{
+    background-color:rgb(255, 75, 75);
+    color:white;
+    border-radius: 10px;
+    width:50px;
+    margin-left:7%;
+    margin-top:5px;
+}
+
+#MultiKill p{
+    font-size:10px;
+}
+
+#championInfomation{
+    margin-left: 30px;
+}
+
+#championInfomation p{
+    text-align: center;
+    margin-top:3px;
+}
+
+#championKillContribute{
+    color:rgb(255, 75, 75);
+}
+
+#championItems{
+    margin-left:20px;
+}
+
+#championItemsFirstLine , #championItemsSecondLine{
+    display:flex;
+}
+
+.championItemImg{
+    width: 22px;
+    height: 22px;
+    padding:1px;
+    border-radius: 5px;
+}
+
+#userTeamChampion{
+    margin-left:20px;
+}
+
+#EnemyTeamChampion{
+    margin-left:20px;
+}
+
+.TeamChampion , .EnemyChampion{
+    width:16px;
+    height:16px;
+}
+
+.TeamuserName , .EnemyuserName{
+    font-size:12px;
+}
+
+

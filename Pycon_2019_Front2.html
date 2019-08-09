@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./Pycon_2019_Front2.css" rel="stylesheet"/>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.js"></script> 
+    <title>Document</title>
+</head>
+<body>
+    <div id="gameItem">
+
+        <div id="gameInfomation">
+            <p id="gameType"></p>
+            <p id="gameDate"></p>
+            <div id="bar"></div>
+            <p id="gameResult"></p>
+            <p id="gameLength"></p>
+        </div>
+
+        <div id="gameUserInfomation">
+            <div id="flexDiv">
+                <img src="" id="championImage"/>
+                <div id="spellDiv">
+                    <img src="" class="spell"/>
+                    <img src="" class="spell"/>
+                </div>
+                <div id="runesDiv">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrTK-r385LfV0KIgW3XCFyjNaAPJk62uHn-jzzGpoBi4jbIlqm7A" class="runes"/>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrTK-r385LfV0KIgW3XCFyjNaAPJk62uHn-jzzGpoBi4jbIlqm7A" class="runes"/>
+                </div>
+            </div>
+            <p id="championName"></p>
+        </div>
+
+        <div id="KDADiv">
+            <div>
+                <div id="KDA">
+                    <p>
+                        <span id="Kill"></span>
+                        <span>/</span>
+                        <span id="Death"></span>
+                        <span>/</span>
+                        <span id="Assist"></span>
+                    </p>
+                </div>
+                <div id="RatingDiv">
+                    <p>
+                        <span id="Rating"></span>
+                        <span>(평점)</span>
+                    </p>
+                </div>
+                <!-- <div id="MultiKill">
+                    <p></p>
+                </div> -->
+            </div>
+        </div>
+
+        <div id="championInfomation">
+            <span id="championLevel"></span><span>레벨</span><br/>
+            <span id="championCS"></span><span>CS</span><br/>
+            <span>킬관여율 : </span><span id="championKillContribute"></span>
+        </div>
+
+        <div id="championItems">
+            <div id="championItemsFirstLine">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTysqXQcnjmEi1RrQz0mOKSzk2oCKjqSlZUZkIUUfaeVOoSJFYw" class="championItemImg"/>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTysqXQcnjmEi1RrQz0mOKSzk2oCKjqSlZUZkIUUfaeVOoSJFYw" class="championItemImg"/>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTysqXQcnjmEi1RrQz0mOKSzk2oCKjqSlZUZkIUUfaeVOoSJFYw" class="championItemImg"/>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTysqXQcnjmEi1RrQz0mOKSzk2oCKjqSlZUZkIUUfaeVOoSJFYw" class="championItemImg"/>
+            </div>
+            <div id="championItemsSecondLine">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTysqXQcnjmEi1RrQz0mOKSzk2oCKjqSlZUZkIUUfaeVOoSJFYw" class="championItemImg"/>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTysqXQcnjmEi1RrQz0mOKSzk2oCKjqSlZUZkIUUfaeVOoSJFYw" class="championItemImg"/>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTysqXQcnjmEi1RrQz0mOKSzk2oCKjqSlZUZkIUUfaeVOoSJFYw" class="championItemImg"/>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTysqXQcnjmEi1RrQz0mOKSzk2oCKjqSlZUZkIUUfaeVOoSJFYw" class="championItemImg"/>
+            </div>
+        </div>
+
+        <div id="userTeamChampion">
+            <img src="http://mblogthumb4.phinf.naver.net/20160720_83/tankun25_1469005206546o89Hw_PNG/image_900151461469005200342.png?type=w800" class="TeamChampion"/><span class="TeamuserName">몽디로 맞아봐</span><br/>
+            <img src="http://mblogthumb4.phinf.naver.net/20160720_83/tankun25_1469005206546o89Hw_PNG/image_900151461469005200342.png?type=w800" class="TeamChampion"/><span class="TeamuserName">몽디로 맞아봐</span><br/>
+            <img src="http://mblogthumb4.phinf.naver.net/20160720_83/tankun25_1469005206546o89Hw_PNG/image_900151461469005200342.png?type=w800" class="TeamChampion"/><span class="TeamuserName">몽디로 맞아봐</span><br/>
+            <img src="http://mblogthumb4.phinf.naver.net/20160720_83/tankun25_1469005206546o89Hw_PNG/image_900151461469005200342.png?type=w800" class="TeamChampion"/><span class="TeamuserName">몽디로 맞아봐</span><br/>
+            <img src="http://mblogthumb4.phinf.naver.net/20160720_83/tankun25_1469005206546o89Hw_PNG/image_900151461469005200342.png?type=w800" class="TeamChampion"/><span class="TeamuserName">몽디로 맞아봐</span><br/>
+        </div>
+
+        <div id="EnemyTeamChampion">
+            <img src="http://mblogthumb4.phinf.naver.net/20160720_83/tankun25_1469005206546o89Hw_PNG/image_900151461469005200342.png?type=w800" class="EnemyChampion"/><span class="EnemyuserName">몽디로 맞아봐</span><br/>
+            <img src="http://mblogthumb4.phinf.naver.net/20160720_83/tankun25_1469005206546o89Hw_PNG/image_900151461469005200342.png?type=w800" class="EnemyChampion"/><span class="EnemyuserName">몽디로 맞아봐</span><br/>
+            <img src="http://mblogthumb4.phinf.naver.net/20160720_83/tankun25_1469005206546o89Hw_PNG/image_900151461469005200342.png?type=w800" class="EnemyChampion"/><span class="EnemyuserName">몽디로 맞아봐</span><br/>
+            <img src="http://mblogthumb4.phinf.naver.net/20160720_83/tankun25_1469005206546o89Hw_PNG/image_900151461469005200342.png?type=w800" class="EnemyChampion"/><span class="EnemyuserName">몽디로 맞아봐</span><br/>
+            <img src="http://mblogthumb4.phinf.naver.net/20160720_83/tankun25_1469005206546o89Hw_PNG/image_900151461469005200342.png?type=w800" class="EnemyChampion"/><span class="EnemyuserName">몽디로 맞아봐</span><br/>
+        </div>
+    </div>
+    <script src="./Pycon_2019_Front.js"></script>
+</body>
+</html>
