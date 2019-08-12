@@ -7,19 +7,27 @@
 p ,span{
     font-size:12px;
     text-align: center;
+    width:110px;
 }
 
 #gameItem{
     display:flex;
     align-items: center;
-    background-color: #bfe6ff;
-    width:740px;
+    /* background-color: #bfe6ff; */
+    width:830px;
     margin-bottom:10px;
 }
-
-#gameInfomation , #gameUserInfomation , #KDADiv{
-    margin-left: 20px;
+.승리{
+    background-color:#bfe6ff;
 }
+
+.패배{
+    background-color:rgb(255, 141, 141);
+}
+/* 
+#gameInfomation , #gameUserInfomation , #KDADiv{
+    margin-left: 10px;
+} */
 
 
 #gameType{
@@ -68,7 +76,6 @@ p ,span{
 #KDADiv{
     display:flex;
     justify-content: center;
-    margin-left:50px;
 }
 
 #KDA{
@@ -102,7 +109,7 @@ p ,span{
 }
 
 #championInfomation{
-    margin-left: 30px;
+    margin-left: 10px;
 }
 
 #championInfomation p{
@@ -129,12 +136,11 @@ p ,span{
     border-radius: 5px;
 }
 
-#userTeamChampion{
+#userTeamChampion , #EnemyTeamChampion{
     margin-left:20px;
-}
-
-#EnemyTeamChampion{
-    margin-left:20px;
+    text-align: left;
+    overflow:hidden;
+    width:120px;
 }
 
 .TeamChampion , .EnemyChampion{
@@ -144,6 +150,7 @@ p ,span{
 
 .TeamuserName , .EnemyuserName{
     font-size:12px;
+    text-align:left;
 }
 
 

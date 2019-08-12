@@ -1,0 +1,75 @@
+#userProfileDiv , #RecodeDiv{
+    background-color:#f2f2f2;
+}
+#wave2{
+    position: absolute;
+    height:200px;
+    width:100%;
+}
+
+#userProfileDiv{
+    display:flex;
+}
+
+#userProfileDiv p{
+    text-align:left;
+}
+
+#userInfoProfileImg{
+    width:150px;
+    height:150px;
+}
+
+#userSoloTearDiv , #userFlexTearDiv{
+    width:200px;
+    height:130px;
+    margin-left:15px;
+    background-color:white;
+    display:flex;
+    margin-top:250px;
+}
+
+#userSoloTearImg , #userFlexTearImg{
+    width: 100px;
+    height:100px;
+}
+
+#userSoloTearDiv p, #userFlexTearDiv p{
+    margin-left:16px;
+    font-size:15px;
+}
+
+#userSoloTearDiv div , #userFlexTearDiv div{
+    width:100px;
+    text-align: center;
+}
+
+.rank{
+    color:rgb(168, 168, 168);
+    margin-top:40px;
+}
+
+.second{
+    margin-top:15px;
+}
+
+#userInfoDiv{
+    margin-top:250px;
+    margin-right:400px;
+    margin-left:300px;
+    display:flex;
+}
+
+#userInfoName{
+    font-size:30px;
+    margin-top:10px;
+    margin-left:10px;
+    width:300px;
+}
+
+#userInfoRanking{
+    font-size:20px;
+    margin-left:10px;
+    width:300px;
+}
+

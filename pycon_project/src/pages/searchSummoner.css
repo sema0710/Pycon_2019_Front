@@ -1,0 +1,40 @@
+#mainDiv{
+    display:flex;
+    justify-content: center;
+}
+
+#backgroundImg{
+    width:100%;
+    height:800px;
+    position: absolute;
+    z-index:-10;
+}
+
+#summonerSearchDiv{
+    background-color:white;
+    width:880px;
+    height:80px;
+    margin-top:400px;
+    padding-left:15px;
+    border-radius: 50px;
+}
+
+#summonerSearchInput{
+    width:780px;
+    height:60px;
+    border:none;
+    border-bottom:1px solid rgb(194, 194, 194);
+    display:inline-block;
+    margin-top:5px;
+    outline:none;
+    font-size:25px;
+    margin-left:20px;
+}
+
+#summonerSearchButton{
+    width:30px;
+    height:30px;
+    position: absolute;
+    margin-left:25px;
+    margin-top:25px;
+}

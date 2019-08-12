@@ -1,0 +1,307 @@
+
+body {
+    background-color: #e8e8e8;
+    overflow-x:hidden;
+}
+.menu {
+    width: 100%;
+    /* background-color: #5383e8; */
+    /* background-image: url('search_menu.png'); */
+    z-index: 100;
+}
+
+.user{
+    display:flex;
+    justify-content: center;
+}
+
+.menu > img {
+    height: 88px;
+    width: 100%;
+}
+.header {
+    display: flex;
+    width: 1000px;
+    height: 180px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.headerInner {
+    height: 100%;
+}
+.headerPastRank {
+    padding-left: 30px;
+}
+.pastRank > li {
+    display: inline-block;
+    padding: 3px 4px 2px 4px;
+    margin-right: 3px;
+    background: #e0e3e3;
+    color: #657070;
+    font-size: 11px;
+    border: 1px solid #ced3d3;
+    border-radius: 3px;
+}
+.headerMain {
+    display: flex;
+    height: 100px;
+    margin-top: 10px;
+}
+.headerMain > div {
+    display: inline-block;
+}
+.face {
+    /* display: flex !important;
+    justify-content: center;
+    align-items: center; */
+    position: relative;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    background-image: url('https://opgg-static.akamaized.net/images/borders2/diamond.png');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+.face > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+.level {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 150%);
+    width: 44px;
+    height: 24px;
+    padding-top: 3px;
+    box-sizing: border-box;
+    background: url('https://opgg-static.akamaized.net/images/site/summoner/bg-levelbox.png');
+    background-size: 100%;
+    line-height: 17px;
+    font-family: Helvetica,AppleSDGothic,"Apple SD Gothic Neo",AppleGothic,Arial,Tahoma;
+    font-size: 14px;
+    text-align: center;
+    color: #eabd56;
+}
+.profile {
+    position: relative;
+    display: inline-block;
+    height: 100px;
+    margin: 0 25px 0 25px;
+    vertical-align: top;
+    line-height: 1.1;
+}
+.name {
+    color: #242929;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 4px;
+    vertical-align: middle;
+}
+.ladderRanking > a {
+    color: #555e5e;
+    font-size: 11px;
+    text-decoration: none;
+    line-height: 1.5;
+}
+.ladderRanking > a > span {
+    color: #059ede;
+    font-weight: bold;
+}
+.buttons {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 0;
+    margin: 15px 0 -6px;
+    white-space: nowrap;
+}
+.buttons > button {
+    position: relative;
+    margin: 0 6px 6px 0;
+    border: 1px solid #1a78ae;
+    background: #1f8ecd;
+    color: #f2f2f2;
+    padding: 11px 14px 10px;
+    border-radius: 2px;
+    font-size: 14px;
+}
+
+.item {
+    width: 690px;
+    margin: 30px auto 0;
+    display: flex;
+}
+.sideContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    vertical-align: top;
+}
+.soloRank {
+    position: relative;
+    display: flex;
+    width: 297px;
+    padding: 17px 0;
+    margin-right: 20px;
+    border: 1px solid #cdd2d2;
+    border-radius: 2px;
+    box-shadow: 0 1px #dcdfdf;
+    background: #f2f2f2;
+    color: #879292;
+}
+.medal > img {
+    width: 84px;
+    height: 84px;
+    margin: 0 28px;
+}
+.soloRankWrap {
+    font-size: 12px;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 8px 0;
+}
+.rankType {
+    font-size: 11px;
+    color: #879292;
+}
+.tierRank {
+    font-size: 15px;
+    font-weight: bold;
+    color: #1f8ecd;
+}
+.leaguePoints {
+    color: #555e5e;
+    font-weight: bold;
+}
+
+.freeRank {
+    width: 297px;
+    height: 123px;
+    display: flex;
+    align-items: center;
+    background-color: #f2f2f2;
+    border: solid 1px #cdd2d2;
+}
+.freeRank > img {
+    width: 64px;
+    height: 64px;
+    margin: 0 28px;
+}
+.freeRankWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.subRankType {
+    font-size: 11px;
+    color: #879292;
+}
+.subTierRank {
+    font-size: 13px;
+    font-weight: bold;
+    color: #1f8ecd;
+}
+.subTierInfo {
+    font-size: 12px;
+    font-weight: bold;
+    color: #555e5e;
+}
+
+.realContent {
+    display: inline-block;
+    width: 690px;
+    margin-left: 10px;
+    font-size: 12px;
+    vertical-align: top;
+}
+.realHeader {
+    position: relative;
+    border-bottom: 1px solid #cdd2d2;
+    overflow: hidden;
+    height: 34px;
+    border: 1px solid #cdd2d2;
+    box-shadow: 0 1px #dcdfdf;
+    background: #f2f2f2;
+    border-radius: 2px;
+    margin-bottom:20px;
+}
+.realHeaderUl {
+    float: left;
+    padding-left: 10px;
+}
+.realHeaderUl > li {
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    margin: 0 10px;
+}
+.realHeaderUl > li > a {
+    display: inline-block;
+    color: #555e5e;
+    font-size: 12px;
+    line-height: 36px;
+    text-decoration: none;
+}
+.realHeaderSearch {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 34px;
+    border-left: 1px solid #cdd2d2
+}
+.inputBox {
+    position: relative;
+    width: 114px;
+    height: 17px;
+    padding: 8px 30px 9px 9px;
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #cdd2d2;
+}
+.inputBox > input {
+    border: 0;
+    outline: none;
+    background: #f2f2f2;
+}
+.searchImage {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.search {
+    display: block;
+    background-position: -125px -4369px;
+    width: 15px;
+    height: 15px;
+    background-image: url('https://opgg-static.akamaized.net/assets/site.png?1565160730');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
